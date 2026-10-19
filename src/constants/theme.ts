@@ -26,6 +26,12 @@ export const Colors = {
 
 export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
 
+/** Brand palette (from the website logo). Not theme-dependent. */
+export const Brand = {
+  primary: '#4D360D',
+  onPrimary: '#FFFFFF',
+} as const;
+
 export const Fonts = Platform.select({
   ios: {
     /** iOS `UIFontDescriptorSystemDesignDefault` */
